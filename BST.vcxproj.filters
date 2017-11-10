@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bst.h">
+    <ClInclude Include="sortBinary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sortBinary.h">
+    <ClInclude Include="bst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

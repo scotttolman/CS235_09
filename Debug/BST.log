@@ -1,0 +1,4 @@
+﻿  assignment09.cpp
+c:\users\tolmans\desktop\cs 235\bst\bst\bst.h : warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+c:\users\tolmans\desktop\cs 235\bst\bst\bst.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\tolmans\desktop\cs 235\bst\bst\bst.h(2): fatal error C1070: mismatched #if/#endif pair in file 'c:\users\tolmans\desktop\cs 235\bst\bst\bst.h'
