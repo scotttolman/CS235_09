@@ -1,10 +1,10 @@
-[/***********************************************************************
+/***********************************************************************
 * Program:
 *    Assignment 09, Binary Search Trees
 *    Brother <your instructor name>, CS 235
 * Author:
 *    <your name here>
-* Summary:
+* Summary: 
 *    This is a driver program to exercise the BST class.  When you
 *    submit your program, this should not be changed in any way.  That being
 *    said, you may need to modify this once or twice to get it to work.
@@ -150,7 +150,7 @@ void testAdd()
    {
       cout << error << endl;
    }
-#endif // TEST2
+#endif // TEST2   
 }
 
 /******************************************
@@ -167,7 +167,7 @@ ostream & operator << (ostream & out, BST <T> & rhs)
    for (it = rhs.begin(); it != rhs.end(); ++it)
       out << "  " << *it;
 #endif // TEST3
-
+   
    out << "  }";
    return out;
 }
@@ -181,14 +181,14 @@ void testIterate()
 {
 #ifdef TEST3
    cout.setf(ios::fixed | ios::showpoint);
-   cout.precision(1);
+   cout.precision(1);   
 
    //
    // An empty tree
    //
    try
    {
-      BST <bool> tree;
+      BST <bool> tree;      
       cout << "Empty tree\n";
       cout << "\tSize:     " << tree.size() << endl;
       cout << "\tContents: " << tree        << endl;
@@ -210,7 +210,7 @@ void testIterate()
       // fill the tree
       cout << "\tFill the BST with: 2.2  1.1  3.3\n";
       tree1.insert(2.2);     //          2.2
-      tree1.insert(1.1);     //     +-----+-----+
+      tree1.insert(1.1);     //     +-----+-----+    
       tree1.insert(3.3);     //    1.1         3.3
       cout << "\tContents forward:  " << tree1 << endl;
 
@@ -228,8 +228,8 @@ void testIterate()
    catch (const char * s)
    {
       cout << s << endl;
-   }
-
+   }      
+   
    //
    // a non-trivial tree
    //
@@ -247,7 +247,7 @@ void testIterate()
       tree1.insert(string("e"));     //       b     e   g     j
       tree1.insert(string("g"));     //     +-+   +-+   +-+
       tree1.insert(string("j"));     //     a     d       h
-      tree1.insert(string("a"));
+      tree1.insert(string("a"));     
       tree1.insert(string("d"));
       tree1.insert(string("h"));
       cout << "\tSize:     " << tree1.size() << endl;
@@ -296,8 +296,8 @@ void testDelete()
       tree.insert('I'); //       E                         I     L       O
       tree.insert('L'); //    +--+                            +--+--+    +-+
       tree.insert('O'); //    C                               K     M      P
-      tree.insert('C'); //  +-+-+
-      tree.insert('K'); //  B   D
+      tree.insert('C'); //  +-+-+                             
+      tree.insert('K'); //  B   D                               
       tree.insert('M');
       tree.insert('B');
       tree.insert('D');
@@ -313,7 +313,7 @@ void testDelete()
       //
 
       cout << "Remove a leaf node: 'D'\n";
-
+      
       // find node 'D' and remove it
       it = tree.find('D');
       if (it == tree.end())
@@ -327,7 +327,7 @@ void testDelete()
       cout << "\tContents: "
            << tree
            << endl;
-
+      
       // look for node 'D' again
       cout << "Attempt to remove 'D' again\n";
       it = tree.find('D');
@@ -341,7 +341,7 @@ void testDelete()
       //
 
       cout << "Remove a one-child node: 'E'\n";
-
+      
       // look for node 'E' and remove it
       it = tree.find('E');
       if (it == tree.end())
@@ -355,7 +355,7 @@ void testDelete()
       cout << "\tContents: "
            << tree
            << endl;
-
+      
       //
       // Remove node J: two children where 'K' is inorder successor
       //
